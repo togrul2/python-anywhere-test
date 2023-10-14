@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -6,12 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Transportation ADA</title>
-  <link rel="icon" href="assets/img/favicon.png" sizes="20x20" type="image/png" />
+  <link rel="icon" href="{% static 'img/favicon.png' %}" sizes="20x20" type="image/png" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/vendor.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="{% static 'css/vendor.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+  <script>
+    var leftArrow = '<img src="{% static 'img/icon/left-arrow.png' %}">';
+    var rightArrow = '<img src="{% static 'img/icon/right-arrow.png' %}">';
+  </script>
 </head>
 
 <body>
@@ -44,7 +49,7 @@
   <header class="navbar-area navbar-area-3 d-lg-none d-block">
     <nav class="navbar navbar-expand-lg px-4">
       <div class="container nav-container p-0 pt-2 pb-2">
-        <a class="main-logo" href="index.html"><img src="assets/img/home-3/2.png" alt="img" /></a>
+        <a class="main-logo" href="index.html"><img src="{% static 'img/home-3/2.png' %}" alt="img" /></a>
         <div class="responsive-mobile-menu">
           <button class="menu toggle-btn d-block d-lg-none" data-target="#logisk_main_menu" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -102,7 +107,7 @@
     <div class="row g-0">
       <div class="col-xl-2 col-lg-3">
         <div class="logo left-logo text-center align-self-center">
-          <a class="main-logo" href="index.html"><img src="assets/img/home-3/2.png" alt="img" /></a>
+          <a class="main-logo" href="index.html"><img src="{% static 'img/home-3/2.png' %}" alt="img" /></a>
         </div>
       </div>
       <div class="col-xl-10 col-lg-9">
@@ -204,7 +209,7 @@
               <span class="pe-4 ps-4 d-xl-inline-block d-none">|</span>
               <div class="media d-xl-inline-flex d-none">
                 <div class="media-left me-2">
-                  <img src="assets/img/p-icon.png" alt="img" />
+                  <img src="{% static 'img/p-icon.png' %}" alt="img" />
                 </div>
                 <div class="media-body">
                   <span class="title">Emergency</span> <br />
@@ -225,7 +230,7 @@
   <!-- banner start -->
   <div class="position-relative">
     <div class="slider slider-for banner-slider-main">
-      <div class="item" style="background: url(assets/img/home-3/3.png)">
+      <div class="item" style="background: url({% static 'img/home-3/3.png' %})">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -250,7 +255,7 @@
           </div>
         </div>
       </div>
-      <div class="item" style="background: url(assets/img/home-3/03.png)">
+      <div class="item" style="background: url({% static 'img/home-3/03.png' %})">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -275,7 +280,7 @@
           </div>
         </div>
       </div>
-      <div class="item" style="background: url(assets/img/home-3/3.png)">
+      <div class="item" style="background: url({% static 'img/home-3/3.png' %})">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -304,13 +309,13 @@
     <div class="container position-relative">
       <div class="slider slider-nav banner-slider-main-nav">
         <div class="item">
-          <img src="assets/img/home-3/3.png" alt="img" />
+          <img src="{% static 'img/home-3/3.png' %}" alt="img" />
         </div>
         <div class="item">
-          <img src="assets/img/home-3/03.png" alt="img" />
+          <img src="{% static 'img/home-3/03.png' %}" alt="img" />
         </div>
         <div class="item">
-          <img src="assets/img/home-3/3.png" alt="img" />
+          <img src="{% static 'img/home-3/3.png' %}" alt="img" />
         </div>
       </div>
     </div>
@@ -320,9 +325,9 @@
         <div class="row g-0">
           <div class="col-lg-4">
             <div class="media single-intro-inner">
-              <img class="hover-bg" src="assets/img/home-3/7.png" alt="img" />
+              <img class="hover-bg" src="{% static 'img/home-3/7.png' %}" alt="img" />
               <div class="media-left">
-                <img src="assets/img/home-3/4.png" alt="img" />
+                <img src="{% static 'img/home-3/4.png' %}" alt="img" />
               </div>
               <div class="media-body">
                 <h5 class="text-white">Real Time Delivery</h5>
@@ -334,9 +339,9 @@
           </div>
           <div class="col-lg-4">
             <div class="media single-intro-inner single-intro-inner-active">
-              <img class="hover-bg" src="assets/img/home-3/7.png" alt="img" />
+              <img class="hover-bg" src="{% static 'img/home-3/7.png' %}" alt="img" />
               <div class="media-left">
-                <img src="assets/img/home-3/5.png" alt="img" />
+                <img src="{% static 'img/home-3/5.png' %}" alt="img" />
               </div>
               <div class="media-body">
                 <h5 class="text-white">Worldwide services</h5>
@@ -348,9 +353,9 @@
           </div>
           <div class="col-lg-4">
             <div class="media single-intro-inner">
-              <img class="hover-bg" src="assets/img/home-3/7.png" alt="img" />
+              <img class="hover-bg" src="{% static 'img/home-3/7.png' %}" alt="img" />
               <div class="media-left">
-                <img src="assets/img/home-3/6.png" alt="img" />
+                <img src="{% static 'img/home-3/6.png' %}" alt="img" />
               </div>
               <div class="media-body">
                 <h5 class="text-white">24/7 Online Support</h5>
@@ -367,13 +372,13 @@
   <!-- banner end -->
 
   <!-- about area start -->
-  <div class="about-area-2 half-bg-right pd-top-120 pd-bottom-120" style="background: url(assets/img/home-3/13.png)">
+  <div class="about-area-2 half-bg-right pd-top-120 pd-bottom-120" style="background: url({% static 'img/home-3/13.png' %})">
     <div class="container">
       <div class="about-area-inner">
         <div class="row">
           <div class="col-lg-5">
             <div class="about-thumb-wrap mb-lg-0 mb-4">
-              <img class="hover-bg" src="assets/img/home-3/8.png" alt="img" />
+              <img class="hover-bg" src="{% static 'img/home-3/8.png' %}" alt="img" />
             </div>
           </div>
           <div class="col-lg-7 align-self-center">
@@ -398,12 +403,12 @@
                 </p>
                 <div class="row">
                   <div class="col-md-4 mb-md-0 mb-4">
-                    <img src="assets/img/home-3/9.png" alt="img" />
+                    <img src="{% static 'img/home-3/9.png' %}" alt="img" />
                   </div>
                   <div class="col-md-8">
                     <div class="media border-bottom-1 pb-3 mb-3">
                       <div class="media-left me-3">
-                        <img src="assets/img/home-3/10.png" alt="img" />
+                        <img src="{% static 'img/home-3/10.png' %}" alt="img" />
                       </div>
                       <div class="media-body">
                         <h5>Reverse logistics</h5>
@@ -414,7 +419,7 @@
                     </div>
                     <div class="media">
                       <div class="media-left me-3">
-                        <img src="assets/img/home-3/11.png" alt="img" />
+                        <img src="{% static 'img/home-3/11.png' %}" alt="img" />
                       </div>
                       <div class="media-body">
                         <h5>Tracking and visibility</h5>
@@ -429,7 +434,7 @@
                   <a class="btn btn-base mb-md-0 mb-4" href="about.html">Load More <i class="fa fa-arrow-right"></i></a>
                   <div class="media ms-md-3">
                     <div class="media-left me-3">
-                      <img src="assets/img/home-3/12.png" alt="img" />
+                      <img src="{% static 'img/home-3/12.png' %}" alt="img" />
                     </div>
                     <div class="media-body">
                       <h6>Guy Hawkins</h6>
@@ -471,10 +476,10 @@
       </div>
       <div class="row">
         <div class="col-lg-3">
-          <div class="single-service-wrap-2 style-2" style="background-image: url(assets/img/home-3/18.png)">
+          <div class="single-service-wrap-2 style-2" style="background-image: url({% static 'img/home-3/18.png' %})">
             <div class="thumb">
               <div class="icon">
-                <img src="assets/img/home-3/14.png" alt="img" />
+                <img src="{% static 'img/home-3/14.png' %}" alt="img" />
               </div>
             </div>
             <div class="details">
@@ -488,10 +493,10 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="single-service-wrap-2 style-2" style="background-image: url(assets/img/home-3/18.png)">
+          <div class="single-service-wrap-2 style-2" style="background-image: url({% static 'img/home-3/18.png' %})">
             <div class="thumb">
               <div class="icon">
-                <img src="assets/img/home-3/15.png" alt="img" />
+                <img src="{% static 'img/home-3/15.png' %}" alt="img" />
               </div>
             </div>
             <div class="details">
@@ -505,10 +510,10 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="single-service-wrap-2 style-2" style="background-image: url(assets/img/home-3/18.png)">
+          <div class="single-service-wrap-2 style-2" style="background-image: url({% static 'img/home-3/18.png' %})">
             <div class="thumb">
               <div class="icon">
-                <img src="assets/img/home-3/16.png" alt="img" />
+                <img src="{% static 'img/home-3/16.png' %}" alt="img" />
               </div>
             </div>
             <div class="details">
@@ -522,10 +527,10 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="single-service-wrap-2 style-2" style="background-image: url(assets/img/home-3/18.png)">
+          <div class="single-service-wrap-2 style-2" style="background-image: url({% static 'img/home-3/18.png' %})">
             <div class="thumb">
               <div class="icon">
-                <img src="assets/img/home-3/17.png" alt="img" />
+                <img src="{% static 'img/home-3/17.png' %}" alt="img" />
               </div>
             </div>
             <div class="details">
@@ -550,7 +555,7 @@
         <div class="row">
           <div class="col-lg-5 order-lg-2">
             <div class="about-thumb-wrap mb-lg-0 mb-5">
-              <img class="hover-bg margin-bottom--150" src="assets/img/home-3/21.png" alt="img" />
+              <img class="hover-bg margin-bottom--150" src="{% static 'img/home-3/21.png' %}" alt="img" />
             </div>
           </div>
           <div class="col-lg-7 order-lg-1 align-self-center">
@@ -569,7 +574,7 @@
                 </h2>
                 <div class="media border-bottom-1-dark pb-3 mb-3">
                   <div class="media-left me-3">
-                    <img src="assets/img/home-3/19.png" alt="img" />
+                    <img src="{% static 'img/home-3/19.png' %}" alt="img" />
                   </div>
                   <div class="media-body">
                     <h6 class="text-white">Real-Time Tracking</h6>
@@ -581,7 +586,7 @@
                 </div>
                 <div class="media border-bottom-1-dark pb-3 mb-3">
                   <div class="media-left me-3">
-                    <img src="assets/img/home-3/20.png" alt="img" />
+                    <img src="{% static 'img/home-3/20.png' %}" alt="img" />
                   </div>
                   <div class="media-body">
                     <h6 class="text-white">Security For Cargo</h6>
@@ -593,7 +598,7 @@
                 </div>
                 <div class="media">
                   <div class="media-left me-3">
-                    <img src="assets/img/home-3/19.png" alt="img" />
+                    <img src="{% static 'img/home-3/19.png' %}" alt="img" />
                   </div>
                   <div class="media-body">
                     <h6 class="text-white">Competitive Pricing</h6>
@@ -636,13 +641,13 @@
         </div>
       </div>
 
-      <div class="bg work-process-bg bg-cover" style="background-image: url(assets/img/home-3/26.png)">
+      <div class="bg work-process-bg bg-cover" style="background-image: url({% static 'img/home-3/26.png' %})">
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="single-work-process-inner text-center">
               <div class="thumb">
                 <div class="icon">
-                  <img src="assets/img/home-3/22.png" alt="img" />
+                  <img src="{% static 'img/home-3/22.png' %}" alt="img" />
                 </div>
               </div>
               <div class="details">
@@ -656,7 +661,7 @@
             <div class="single-work-process-inner text-center">
               <div class="thumb">
                 <div class="icon">
-                  <img src="assets/img/home-3/23.png" alt="img" />
+                  <img src="{% static 'img/home-3/23.png' %}" alt="img" />
                 </div>
               </div>
               <div class="details">
@@ -670,7 +675,7 @@
             <div class="single-work-process-inner text-center">
               <div class="thumb">
                 <div class="icon">
-                  <img src="assets/img/home-3/24.png" alt="img" />
+                  <img src="{% static 'img/home-3/24.png' %}" alt="img" />
                 </div>
               </div>
               <div class="details">
@@ -684,7 +689,7 @@
             <div class="single-work-process-inner text-center">
               <div class="thumb">
                 <div class="icon">
-                  <img src="assets/img/home-3/25.png" alt="img" />
+                  <img src="{% static 'img/home-3/25.png' %}" alt="img" />
                 </div>
               </div>
               <div class="details">
@@ -725,37 +730,37 @@
       </div>
     </div>
     <div class="project-slider owl-carousel">
-      <div class="single-project-inner" style="background-image: url(assets/img/home-3/27.png)">
+      <div class="single-project-inner" style="background-image: url({% static 'img/home-3/27.png' %})">
         <div class="details">
           <span class="cat">Transportations</span>
           <h5>Product Distribution</h5>
         </div>
       </div>
-      <div class="single-project-inner" style="background-image: url(assets/img/home-3/28.png)">
+      <div class="single-project-inner" style="background-image: url({% static 'img/home-3/28.png' %})">
         <div class="details">
           <span class="cat">Transportations</span>
           <h5>Product Distribution</h5>
         </div>
       </div>
-      <div class="single-project-inner" style="background-image: url(assets/img/home-3/29.png)">
+      <div class="single-project-inner" style="background-image: url({% static 'img/home-3/29.png' %})">
         <div class="details">
           <span class="cat">Transportations</span>
           <h5>Product Distribution</h5>
         </div>
       </div>
-      <div class="single-project-inner" style="background-image: url(assets/img/home-3/30.png)">
+      <div class="single-project-inner" style="background-image: url({% static 'img/home-3/30.png' %})">
         <div class="details">
           <span class="cat">Transportations</span>
           <h5>Product Distribution</h5>
         </div>
       </div>
-      <div class="single-project-inner" style="background-image: url(assets/img/home-3/31.png)">
+      <div class="single-project-inner" style="background-image: url({% static 'img/home-3/31.png' %})">
         <div class="details">
           <span class="cat">Transportations</span>
           <h5>Product Distribution</h5>
         </div>
       </div>
-      <div class="single-project-inner" style="background-image: url(assets/img/home-3/27.png)">
+      <div class="single-project-inner" style="background-image: url({% static 'img/home-3/27.png' %})">
         <div class="details">
           <span class="cat">Transportations</span>
           <h5>Product Distribution</h5>
@@ -787,7 +792,7 @@
           <div class="single-testimonial-wrap style-2">
             <div class="client-wrap">
               <div class="thumb">
-                <img src="assets/img/home-3/32.png" alt="img" />
+                <img src="{% static 'img/home-3/32.png' %}" alt="img" />
               </div>
               <div class="details">
                 <h5>Devon Lane</h5>
@@ -805,7 +810,7 @@
           <div class="single-testimonial-wrap style-2">
             <div class="client-wrap">
               <div class="thumb">
-                <img src="assets/img/home-3/33.png" alt="img" />
+                <img src="{% static 'img/home-3/33.png' %}" alt="img" />
               </div>
               <div class="details">
                 <h5>Richards</h5>
@@ -823,7 +828,7 @@
           <div class="single-testimonial-wrap style-2">
             <div class="client-wrap">
               <div class="thumb">
-                <img src="assets/img/home-3/34.png" alt="img" />
+                <img src="{% static 'img/home-3/34.png' %}" alt="img" />
               </div>
               <div class="details">
                 <h5>Ronald</h5>
@@ -842,7 +847,7 @@
   </div>
   <!-- testimonial area end -->
 
-  <div class="contact-area" style="background-image: url(assets/img/home-3/40.png)">
+  <div class="contact-area" style="background-image: url({% static 'img/home-3/40.png' %})">
     <!--fact-area start-->
     <div class="container">
       <div class="fact-counter-area style-2 bg-black">
@@ -850,7 +855,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="single-fact-wrap text-center">
               <div class="thumb mb-3">
-                <img src="assets/img/home-3/35.png" alt="img" />
+                <img src="{% static 'img/home-3/35.png' %}" alt="img" />
               </div>
               <h2 class="mb-0 text-white">
                 <span class="counter">165</span>+
@@ -861,7 +866,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="single-fact-wrap text-center">
               <div class="thumb mb-3">
-                <img src="assets/img/home-3/36.png" alt="img" />
+                <img src="{% static 'img/home-3/36.png' %}" alt="img" />
               </div>
               <h2 class="mb-0 text-white">
                 <span class="counter">30</span>+
@@ -872,7 +877,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="single-fact-wrap text-center">
               <div class="thumb mb-3">
-                <img src="assets/img/home-3/37.png" alt="img" />
+                <img src="{% static 'img/home-3/37.png' %}" alt="img" />
               </div>
               <h2 class="mb-0 text-white">
                 <span class="counter">38</span>+
@@ -883,7 +888,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="single-fact-wrap after-none text-center">
               <div class="thumb mb-3">
-                <img src="assets/img/home-3/38.png" alt="img" />
+                <img src="{% static 'img/home-3/38.png' %}" alt="img" />
               </div>
               <h2 class="mb-0 text-white">
                 <span class="counter">80</span>+
@@ -919,7 +924,7 @@
                   <h6 class="text-white mb-0">+12 (88) 555-013</h6>
                 </div>
                 <div class="col-md-4 mb-md-0 mb-4 align-self-center text-md-center">
-                  <img src="assets/img/home-3/39.png" alt="img" />
+                  <img src="{% static 'img/home-3/39.png' %}" alt="img" />
                 </div>
                 <div class="col-md-4 align-self-center text-md-end">
                   <p class="text-white">Email Address</p>
@@ -998,7 +1003,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="single-blog-inner style-2">
             <div class="thumb">
-              <img src="assets/img/home-3/41.png" alt="img" />
+              <img src="{% static 'img/home-3/41.png' %}" alt="img" />
             </div>
             <div class="details">
               <ul class="blog-meta border-0 m-0 pb-2">
@@ -1022,7 +1027,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="single-blog-inner style-2">
             <div class="thumb">
-              <img src="assets/img/home-3/42.png" alt="img" />
+              <img src="{% static 'img/home-3/42.png' %}" alt="img" />
             </div>
             <div class="details">
               <ul class="blog-meta border-0 m-0 pb-2">
@@ -1046,7 +1051,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="single-blog-inner style-2">
             <div class="thumb">
-              <img src="assets/img/home-3/43.png" alt="img" />
+              <img src="{% static 'img/home-3/43.png' %}" alt="img" />
             </div>
             <div class="details">
               <ul class="blog-meta border-0 m-0 pb-2">
@@ -1074,7 +1079,7 @@
 
   <!-- footer area start -->
   <footer class="footer-area style-2">
-    <div class="footer-top" style="background-image: url(assets/img/fact/bg.png)">
+    <div class="footer-top" style="background-image: url({% static 'img/fact/bg.png' %})">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 align-self-center">
@@ -1100,7 +1105,7 @@
         <div class="col-xl-4 col-md-6">
           <div class="widget widget_about pe-xl-5">
             <h4 class="widget-title">
-              <img src="assets/img/home-3/2.png" alt="img" />
+              <img src="{% static 'img/home-3/2.png' %}" alt="img" />
             </h4>
             <div class="details">
               <p>
@@ -1202,9 +1207,9 @@
   <!-- back to top area end -->
 
   <!-- all plugins here -->
-  <script src="assets/js/vendor.js"></script>
+  <script src="{% static 'js/vendor.js' %}"></script>
   <!-- main js  -->
-  <script src="assets/js/main.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
 </body>
 
 </html>
