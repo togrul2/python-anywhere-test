@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="us">
 
 <head>
   <meta charset="UTF-8" />
@@ -20,17 +20,6 @@
 </head>
 
 <body>
-  <!-- preloader area start -->
-  <!-- <div class="preloader" id="preloader">
-        <div class="preloader-inner">
-            <div class="spinner">
-                <div class="dot1"></div>
-                <div class="dot2"></div>
-            </div>
-        </div>
-    </div> -->
-  <!-- preloader area end -->
-
   <!-- search popup start-->
   <div class="body-overlay" id="body-overlay"></div>
   <div class="td-search-popup" id="td-search-popup">
@@ -49,7 +38,7 @@
   <header class="navbar-area navbar-area-3 d-lg-none d-block">
     <nav class="navbar navbar-expand-lg px-4">
       <div class="container nav-container p-0 pt-2 pb-2">
-        <a class="main-logo" href="index.html"><img src="{% static 'img/home-3/2.png' %}" alt="img" /></a>
+        <a class="main-logo" href="{% static 'presentation:home' %}"><img src="{% static 'img/home-3/2.png' %}" alt="img" /></a>
         <div class="responsive-mobile-menu">
           <button class="menu toggle-btn d-block d-lg-none" data-target="#logisk_main_menu" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -59,42 +48,9 @@
         </div>
         <div class="collapse navbar-collapse" id="logisk_main_menu">
           <ul class="navbar-nav menu-open text-lg-end">
-            <li class="menu-item-has-children current-menu-item">
-            <li><a href="index.html">Home</a></li>
-            </li>
-            <li><a href="about.html">About Us</a></li>
-            <li class="menu-item-has-children">
-              <a href="#">Services</a>
-              <ul class="sub-menu">
-                <li><a href="service.html">Service</a></li>
-                <li>
-                  <a href="service-details.html">Service Details Page</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#">Pages</a>
-              <ul class="sub-menu">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="service.html">Service Page</a></li>
-                <li>
-                  <a href="servie-details.html">Service Details Page</a>
-                </li>
-                <li><a href="blog.html">Blog Page</a></li>
-                <li><a href="blog-details.html">Blog Details</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#">Blog</a>
-              <ul class="sub-menu">
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="blog-details.html">Blog Details</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="{% url 'presentation:home' %}">Home</a></li>
+            <li><a href="{% url 'presentation:about-us' %}">About Us</a></li>
+            <li><a href="{% url 'presentation:contact' %}">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -107,7 +63,7 @@
     <div class="row g-0">
       <div class="col-xl-2 col-lg-3">
         <div class="logo left-logo text-center align-self-center">
-          <a class="main-logo" href="index.html"><img src="{% static 'img/home-3/2.png' %}" alt="img" /></a>
+          <a class="main-logo" href="{% url 'presentation:home' %}"><img src="{% static 'img/home-3/2.png' %}" alt="img" /></a>
         </div>
       </div>
       <div class="col-xl-10 col-lg-9">
@@ -170,38 +126,14 @@
                     fill="#080C24" />
                 </svg>
               </a>
-              <a class="btn btn-base" href="contact.html"><span> </span> Get A Quote
+              <a class="btn btn-base" href="{% url 'presentation:contact' %}"><span> </span> Get A Quote
               </a>
             </div>
             <div class="collapse navbar-collapse" id="logisk_main_menu">
               <ul class="navbar-nav menu-open">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">Services</a>
-                  <ul class="sub-menu">
-                    <li><a href="service.html">Service</a></li>
-                    <li>
-                      <a href="service-details.html">Service Details Page</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">Pages</a>
-                  <ul class="sub-menu">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="service.html">Service Page</a></li>
-                    <li>
-                      <a href="servie-details.html">Service Details Page</a>
-                    </li>
-                    <li><a href="blog.html">Blog Page</a></li>
-                    <li><a href="blog-details.html">Blog Details</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="{% url 'presentation:home' %}">Home</a></li>
+                <li><a href="{% url 'presentation:about-us' %}">About Us</a></li>
+                <li><a href="{% url 'presentation:contact' %}">Contact Us</a></li>
               </ul>
             </div>
             <div class="nav-right-part nav-right-part-desktop">

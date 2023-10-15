@@ -142,46 +142,8 @@
               </div>
               <div class="collapse navbar-collapse" id="logisk_main_menu">
                 <ul class="navbar-nav menu-open text-lg-end">
-                  <li class="menu-item-has-children current-menu-item">
-                    <a href="#">Home</a>
-                    <ul class="sub-menu">
-                      <li><a href="{% url 'presentation:home' %}">Home 01</a></li>
-                      <li><a href="index-2.html">Home 02</a></li>
-                      <li><a href="index-3.html">Home 03</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="{% url 'presentation:home' %}">Home</a></li>
                   <li><a href="{% url 'presentation:about-us' %}">About Us</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Services</a>
-                    <ul class="sub-menu">
-                      <li><a href="{% url 'presentation:service' %}">Service</a></li>
-                      <li>
-                        <a href="service-details.html">Service Details Page</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul class="sub-menu">
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="service.html">Service Page</a></li>
-                      <li>
-                        <a href="servie-details.html">Service Details Page</a>
-                      </li>
-                      <li><a href="blog.html">Blog Page</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                      <li><a href="pricing.html">Pricing</a></li>
-                      <li><a href="faq.html">FAQ</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Blog</a>
-                    <ul class="sub-menu">
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
                   <li><a href="{% url 'presentation:contact' %}">Contact Us</a></li>
                 </ul>
               </div>
@@ -296,17 +258,6 @@
                   <a href="{% url 'presentation:about-us' %}"
                     ><i class="fa fa-arrow-right"></i> About Us</a
                   >
-                </li>
-                <li>
-                  <a href="{% url 'presentation:service' %}"
-                    ><i class="fa fa-arrow-right"></i> Services</a
-                  >
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-arrow-right"></i> Portfolio</a>
-                </li>
-                <li>
-                  <a href="{% url 'presentation:blog' %}"><i class="fa fa-arrow-right"></i>Blog</a>
                 </li>
                 <li>
                   <a href="{% url 'presentation:contact' %}"
