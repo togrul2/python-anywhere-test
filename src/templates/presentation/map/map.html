@@ -1,0 +1,55 @@
+{% extends 'presentation/map/base.html' %}
+{% load static %}
+
+{% block extend_head %}
+
+<script src='https://www.google.com/recaptcha/api.js?render={{recaptcha_site_key}}'></script>
+
+{% endblock %}
+
+{% block extend_nav %}
+
+
+<ul class="sidenav">
+  <li><a href="javascript:void(0)">Demo Map</a></li>
+  <li><a href="{% url 'presentation:home' %}">Home</a></li>
+</ul>
+
+{% endblock %}
+
+
+{% block content %}
+
+<h3>Title</h3>
+
+<div class="container">
+
+   <label for="id-google-address-a">Start Address</label>
+   <input type="text" placeholder="ADA University" id="id-google-address-a" name="google_address_a">
+
+   <label for="id-google-address-b">Destination Address</label>
+   <input type="text" placeholder="UFAZ" id="id-google-address-b" name="google_address_b">
+
+
+   <input type="hidden" class="geo" id="id-lat-a" value="">
+   <input type="hidden" class="geo" id="id-long-a" value="">
+   <input type="hidden" class="geo" id="id-lat-b" value="">
+   <input type="hidden" class="geo" id="id-long-b" value="">
+
+   <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12155.527153802652!2d49.84808717128223!3d40.38931248660781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x40307d6ee857fa47%3A0x67993e393222e8e2!2sADA%20Universiteti%2C%20Baku!3m2!1d40.394599!2d49.84938!4m5!1s0x40307da84d07764f%3A0xabaa0431ef903b77!2sUfaz%2C%20Nizami%20Street%2C%20Baku!3m2!1d40.3766593!2d49.8516796!5e0!3m2!1sen!2saz!4v1697360906182!5m2!1sen!2saz" width="1065" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+{% endblock %}
+
+{% block extend_footer %}
+
+
+  <script type="text/javascript">
+    var google_api_key = "{{google_api_key|safe}}";
+  </script>
+
+  <script src="{% static 'google_places.js' %}"></script>
+
+
+{% endblock %}

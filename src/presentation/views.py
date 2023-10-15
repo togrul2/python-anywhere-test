@@ -17,3 +17,7 @@ class FAQView(TemplateView):
 
 class ContactView(TemplateView):
     template_name = "presentation/contact.html"
+
+
+class MapView(TemplateView):
+    template_name = "presentation/map/map.html"
